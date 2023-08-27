@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+}
+
+button {
+    background: none;
+    width: 25%;
+    font-size: 3em;
+    margin-top: 22.5%;
+    margin-left: 37.5%;
+    color: white;
+    border: none;
+}
