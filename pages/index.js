@@ -1,3 +1,5 @@
+function Home() {
+    return `
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,3 +12,5 @@
     <button onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';">Clique aqui</button>
 </body>
 </html>
+`;
+}
