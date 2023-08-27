@@ -14,3 +14,5 @@ function Home() {
         </html>
         `;
 }
+
+export default Home;
