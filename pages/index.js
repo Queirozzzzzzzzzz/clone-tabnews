@@ -1,6 +1,4 @@
 function Home() {
-    return (
-        <input type="button" value="Clique" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';" />
-    );
+    return <h1>Eu odeio CSS :(</h1>
 }
 export default Home;
