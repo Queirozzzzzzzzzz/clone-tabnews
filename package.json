@@ -2,7 +2,7 @@
   "name": "clone-tabnews",
   "version": "1.0.0",
   "description": "Clone do tabnews feito a partir do curso.dev",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "dev": "next dev"
   },
