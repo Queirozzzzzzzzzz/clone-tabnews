@@ -1,5 +1,5 @@
 function Home() {
-    return <button onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';">Clique aqui</button>;
+    return window.location.href = 'index.html';
 }
 
 export default Home;
