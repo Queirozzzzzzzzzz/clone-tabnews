@@ -1,16 +1,7 @@
 import database from "infra/database.js";
 
-async function status(request, response) {
+async function status(req, res) {
   const updatedAt = new Date().toISOString();
-  //const postgresVersion = (await database.query("SHOW server_version;")).rows[0]
-  //  .server_version;
-  //const maxConnections = (await database.query("SHOW max_connections;")).rows[0]
-  //  .max_connections;
-  //const connections = (
-  //  await database.query(
-  //    "SELECT sum(numbackends) as connections FROM pg_stat_database;",
-  //  )
-  //).rows[0].connections;
 
   const postgresVersionResult = await database.query("SHOW server_version;");
   const postgresVersionValue = postgresVersionResult.rows[0].server_version;
@@ -29,7 +20,7 @@ async function status(request, response) {
   const databaseOpenedConnectionsValue =
     databaseOpenedConnectionsResult.rows[0].count;
 
-  response.status(200).json({
+  res.status(200).json({
     updated_at: updatedAt,
     dependencies: {
       database: {
